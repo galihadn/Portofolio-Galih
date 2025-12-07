@@ -107,15 +107,12 @@
  .hero {
     width: 100%;
     min-height: 95vh;
-    padding: 70px 5% 50px;
-
+    padding: 120px 5% 50px;
     display: flex;
-    justify-content: center;       /* gambar tidak terdorong ke kanan */
+    justify-content: space-between;
     align-items: center;
-    gap: 40px;
-
-    flex-wrap: wrap;               /* biar responsif */
-}
+    gap: 50px;
+  }
   .hero-text h1 {
     font-size: 48px;
     font-weight: 800;
