@@ -1,474 +1,474 @@
-/* =====================================
-   GLOBAL
-===================================== */
-/* Tombol hamburger default (desktop): disembunyikan */
-.menu-btn {
-  display: none;
-}
+  /* =====================================
+    GLOBAL
+  ===================================== */
+  /* Tombol hamburger default (desktop): disembunyikan */
+  .menu-btn {
+    display: none;
+  }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background: #ffffff;
-  color: #222;
-  line-height: 1.6;
-  transition: 0.3s;
-}
+  body {
+    background: #ffffff;
+    color: #222;
+    line-height: 1.6;
+    transition: 0.3s;
+  }
 
-/* Dark mode */
-body.dark-mode {
-  background: #0f0f0f;
-  color: #eaeaea;
-}
+  /* Dark mode */
+  body.dark-mode {
+    background: #0f0f0f;
+    color: #eaeaea;
+  }
 
-/* =====================================
-   NAVBAR
-===================================== */
-nav {
-  width: 100%;
-  padding: 18px 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(10px);
-  z-index: 999;
-  border-bottom: 1px solid #eaeaea;
-  transition: 0.3s;
-}
-
-body.dark-mode nav {
-  background: rgba(20,20,20,0.85);
-  border-bottom-color: #333;
-}
-
-nav h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #007bff;
-}
-
-nav .sub-title {
-  color: #777;
-  font-weight: 400;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 17px;
-  transition: 0.3s;
-}
-
-body.dark-mode nav ul li a {
-  color: #eaeaea;
-}
-
-nav ul li a:hover {
-  color: #007bff;
-}
-
-/* Dark mode button */
-.dark-btn {
-  background: none;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
-  transition: 0.3s;
-  padding: 6px;
-  border-radius: 8px;
-}
-
-.dark-btn:hover {
-  background: rgba(0,123,255,0.15);
-}
-
-/* =====================================
-   HERO
-===================================== */
-.hero {
-  width: 100%;
-  min-height: 95vh;
-  padding: 120px 5% 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-}
-
-.hero-text h1 {
-  font-size: 48px;
-  font-weight: 800;
-}
-
-.name {
-  color: #007bff;
-}
-
-.hero-text p {
-  margin-top: 10px;
-  max-width: 450px;
-  font-size: 18px;
-  opacity: 0.9;
-}
-
-.btn-group {
-  margin-top: 25px;
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 500;
-  margin-right: 10px;
-  transition: 0.3s;
-}
-
-.btn-primary {
-  background: #007bff;
-  color: white;
-}
-
-.btn-primary:hover {
-  background: #005ecb;
-  transform: translateY(-3px);
-}
-
-.btn-outline {
-  border: 2px solid #007bff;
-  color: #007bff;
-}
-
-.btn-outline:hover {
-  background: #007bff;
-  color: white;
-  transform: translateY(-3px);
-}
-
-/* Hero Image */
-.hero-img img {
-  width: 380px;
-  border-radius: 22px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-  transition: 0.4s;
-}
-
-.hero-img img:hover {
-  transform: scale(1.04);
-}
-
-/* =====================================
-   SECTION TITLE
-===================================== */
-section {
-  padding: 90px 5%;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  color: #007bff;
-  margin-bottom: 50px;
-}
-
-/* =====================================
-   ABOUT
-===================================== */
-.about {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.about img {
-  width: 330px;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-}
-
-.about-text {
-  max-width: 600px;
-}
-
-/* =====================================
-   SKILLS
-===================================== */
-.skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 25px;
-}
-
-.skill-box {
-  padding: 20px;
-  text-align: center;
-  border-radius: 14px;
-  background: #f6f7f9;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-body.dark-mode .skill-box {
-  background: #1c1c1c;
-}
-
-.skill-box:hover {
-  transform: translateY(-6px);
-  background: #007bff;
-  color: white;
-}
-
-/* =====================================
-   PROJECT
-===================================== */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.gallery-item {
-  background: #fff;
-  padding: 15px;
-  border-radius: 16px;
-  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
-  transition: 0.3s;
-}
-
-body.dark-mode .gallery-item {
-  background: #1c1c1c;
-}
-
-.gallery-item img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 12px;
-}
-
-.gallery-item:hover {
-  transform: translateY(-8px);
-}
-
-/* =====================================
-   CONTACT FORM
-===================================== */
-form {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  max-width: 500px;
-  margin: auto;
-}
-
-body.dark-mode form {
-  background: #1c1c1c;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 12px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #fff;
-}
-
-body.dark-mode form input,
-body.dark-mode form textarea {
-  background: #222;
-  color: #eaeaea;
-  border-color: #444;
-}
-
-form button {
-  padding: 12px;
-  width: 100%;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-form button:hover {
-  background: #005ecb;
-}
-
-/* ===========================
-   RESPONSIVE MOBILE (≤ 768px)
-=========================== */
-@media (max-width: 768px) {
-
-  /* NAVBAR */
+  /* =====================================
+    NAVBAR
+  ===================================== */
   nav {
-    padding: 15px 5%;
+    width: 100%;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    border-bottom: 1px solid #eaeaea;
+    transition: 0.3s;
+  }
+
+  body.dark-mode nav {
+    background: rgba(20,20,20,0.85);
+    border-bottom-color: #333;
   }
 
   nav h2 {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #007bff;
+  }
+
+  nav .sub-title {
+    color: #777;
+    font-weight: 400;
   }
 
   nav ul {
-    gap: 15px;
+    list-style: none;
+    display: flex;
+    gap: 25px;
   }
 
   nav ul li a {
-    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.3s;
   }
 
-  /* HERO */
+  body.dark-mode nav ul li a {
+    color: #eaeaea;
+  }
+
+  nav ul li a:hover {
+    color: #007bff;
+  }
+
+  /* Dark mode button */
+  .dark-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 6px;
+    border-radius: 8px;
+  }
+
+  .dark-btn:hover {
+    background: rgba(0,123,255,0.15);
+  }
+
+  /* =====================================
+    HERO
+  ===================================== */
   .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding: 130px 5% 50px;
-  }
-
-  .hero-img img {
-    width: 70%;
-    max-width: 260px;
+    width: 100%;
+    min-height: 95vh;
+    padding: 120px 5% 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
   }
 
   .hero-text h1 {
-    font-size: 32px;
+    font-size: 48px;
+    font-weight: 800;
+  }
+
+  .name {
+    color: #007bff;
   }
 
   .hero-text p {
-    font-size: 16px;
-    max-width: 100%;
+    margin-top: 10px;
+    max-width: 450px;
+    font-size: 18px;
+    opacity: 0.9;
   }
 
   .btn-group {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
+  /* Buttons */
   .btn {
-    width: 100%;
-    text-align: center;
-    margin-right: 0;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: 0.3s;
   }
 
-  /* ABOUT */
-  .about {
-    flex-direction: column;
+  .btn-primary {
+    background: #007bff;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: #005ecb;
+    transform: translateY(-3px);
+  }
+
+  .btn-outline {
+    border: 2px solid #007bff;
+    color: #007bff;
+  }
+
+  .btn-outline:hover {
+    background: #007bff;
+    color: white;
+    transform: translateY(-3px);
+  }
+
+  /* Hero Image */
+  .hero-img img {
+    width: 380px;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: 0.4s;
+  }
+
+  .hero-img img:hover {
+    transform: scale(1.04);
+  }
+
+  /* =====================================
+    SECTION TITLE
+  ===================================== */
+  section {
+    padding: 90px 5%;
+  }
+
+  .section-title {
     text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 50px;
+  }
+
+  /* =====================================
+    ABOUT
+  ===================================== */
+  .about {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .about img {
-    width: 75%;
-    max-width: 250px;
+    width: 330px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
   }
 
-  /* SKILLS */
+  .about-text {
+    max-width: 600px;
+  }
+
+  /* =====================================
+    SKILLS
+  ===================================== */
   .skills {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
   }
 
-  /* PROJECT */
+  .skill-box {
+    padding: 20px;
+    text-align: center;
+    border-radius: 14px;
+    background: #f6f7f9;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  body.dark-mode .skill-box {
+    background: #1c1c1c;
+  }
+
+  .skill-box:hover {
+    transform: translateY(-6px);
+    background: #007bff;
+    color: white;
+  }
+
+  /* =====================================
+    PROJECT
+  ===================================== */
   .gallery {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .gallery-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+  }
+
+  body.dark-mode .gallery-item {
+    background: #1c1c1c;
   }
 
   .gallery-item img {
-    max-height: 220px;
-    object-fit: cover;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
   }
 
-  /* CONTACT FORM */
+  .gallery-item:hover {
+    transform: translateY(-8px);
+  }
+
+  /* =====================================
+    CONTACT FORM
+  ===================================== */
   form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    max-width: 500px;
+    margin: auto;
+  }
+
+  body.dark-mode form {
+    background: #1c1c1c;
+  }
+
+  form input,
+  form textarea {
     width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
   }
 
-  /* BACK TO TOP */
-  #backToTop {
-    right: 15px;
-    bottom: 15px;
-    font-size: 20px;
-    padding: 10px 13px;
+  body.dark-mode form input,
+  body.dark-mode form textarea {
+    background: #222;
+    color: #eaeaea;
+    border-color: #444;
   }
-}
 
-/* =========================================
-   FIX NAVBAR MOBILE (≤ 768px)
-========================================= */
-/* =========================================
-   NAVBAR MOBILE FIX (≤ 768px)
-========================================= */
-@media (max-width: 768px) {
-
-  /* TOMBOL HAMBURGER MUNCUL */
-  .menu-btn {
-    display: block;
-    font-size: 26px;
-    background: none;
+  form button {
+    padding: 12px;
+    width: 100%;
+    background: #007bff;
+    color: white;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s;
   }
 
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  form button:hover {
+    background: #005ecb;
   }
 
-  /* Sembunyikan menu dulu */
-  nav ul {
-    display: none;
-    position: absolute;
-    top: 65px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    background: inherit;
-    padding: 15px 0;
-    border-top: 1px solid #ccc;
-    flex-direction: column;
-    gap: 10px;
+  /* ===========================
+    RESPONSIVE MOBILE (≤ 768px)
+  =========================== */
+  @media (max-width: 768px) {
+
+    /* NAVBAR */
+    nav {
+      padding: 15px 5%;
+    }
+
+    nav h2 {
+      font-size: 20px;
+    }
+
+    nav ul {
+      gap: 15px;
+    }
+
+    nav ul li a {
+      font-size: 15px;
+    }
+
+    /* HERO */
+    .hero {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 130px 5% 50px;
+    }
+
+    .hero-img img {
+      width: 70%;
+      max-width: 260px;
+    }
+
+    .hero-text h1 {
+      font-size: 32px;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      max-width: 100%;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      width: 100%;
+      text-align: center;
+      margin-right: 0;
+    }
+
+    /* ABOUT */
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about img {
+      width: 75%;
+      max-width: 250px;
+    }
+
+    /* SKILLS */
+    .skills {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    /* PROJECT */
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+      max-height: 220px;
+      object-fit: cover;
+    }
+
+    /* CONTACT FORM */
+    form {
+      width: 100%;
+    }
+
+    /* BACK TO TOP */
+    #backToTop {
+      right: 15px;
+      bottom: 15px;
+      font-size: 20px;
+      padding: 10px 13px;
+    }
   }
 
-  /* Muncul saat ditekan */
-  nav ul.active {
-    display: flex;
+  /* =========================================
+    FIX NAVBAR MOBILE (≤ 768px)
+  ========================================= */
+  /* =========================================
+    NAVBAR MOBILE FIX (≤ 768px)
+  ========================================= */
+  @media (max-width: 768px) {
+
+    /* TOMBOL HAMBURGER MUNCUL */
+    .menu-btn {
+      display: block;
+      font-size: 26px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    nav {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Sembunyikan menu dulu */
+    nav ul {
+      display: none;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background: inherit;
+      padding: 15px 0;
+      border-top: 1px solid #ccc;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* Muncul saat ditekan */
+    nav ul.active {
+      display: flex;
+    }
+
+    /* Dark mode tetap di pojok kanan */
+    #darkModeBtn {
+      margin-left: 15px;
+    }
   }
 
-  /* Dark mode tetap di pojok kanan */
-  #darkModeBtn {
-    margin-left: 15px;
-  }
-}
 
 
-
-/* =====================================
-   BACK TO TOP
-===
+  /* =====================================
+    BACK TO TOP
+  ===
