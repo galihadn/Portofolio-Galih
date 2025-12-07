@@ -2,10 +2,10 @@
     GLOBAL
   ===================================== */
   /* Tombol hamburger default (desktop): disembunyikan */
-  
-.menu-btn {
-  display: none;
-}
+  .menu-btn {
+    display: none;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -466,65 +466,6 @@
       margin-left: 15px;
     }
   }
- /* ***********************
-   RESET / DESKTOP DEFAULT
-*************************/
-
-
-/* =========================
-   MOBILE / TABLET NAVBAR
-   tampil jika layar ≤ 900px
-============================ */
-@media (max-width: 900px) {
-  nav {
-    position: relative;
-    padding: 15px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  nav h2 {
-    font-size: 20px;
-  }
-
-  /* Tampilkan tombol hamburger di mobile */
-  .menu-btn {
-    display: block;
-    font-size: 26px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  /* Sembunyikan menu list default */
-  nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin: 10px 0 0 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    background: inherit;
-  }
-
-  /* Ketika aktif (menu dibuka) */
-  nav ul.active {
-    display: flex;
-  }
-
-  nav ul li {
-    margin: 8px 0;
-  }
-
-  nav ul li a {
-    display: block;
-    padding: 10px 0;
-    width: 100%;
-    font-size: 16px;
-  }
-}
 
 
 
