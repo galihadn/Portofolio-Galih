@@ -105,7 +105,7 @@
     HERO
   ===================================== */
   .hero {
-    width: 50%;
+    width: 80%;
     min-height: 95vh;
     padding: 100px 5% 50px;
     display: flex;
