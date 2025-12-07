@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Galij - Web Admin</title>
+    <link rel="stylesheet" href="asset/css/style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>Galij <span class="sub-title">| Sistem Informasi</span></h2>
+
+        <ul>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+
+        <button id="darkModeBtn" class="dark-btn">🌙</button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Halo, Saya <span class="name">Galij</span></h1>
+            <p>Calon Web Admin dengan pengalaman pengelolaan data & website.</p>
+
+            <p><b>Saya adalah <span id="typing"></span></b></p>
+
+            <div class="btn-group">
+                <a href="cv.pdf" class="btn btn-primary" download>Download CV</a>
+                <a href="#kontak" class="btn btn-outline">Hubungi Saya</a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img src="img/profile.jpg" alt="Galij" />
+        </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang">
+        <h2 class="section-title">Tentang Saya</h2>
+
+        <div class="about">
+            <img src="img/about.jpg" alt="About Image" />
+
+            <div class="about-text">
+                <h3>Galij</h3>
+                <p>Sistem Informasi • Web Admin<br>Admin Website CRUD Bootstrap</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian">
+        <h2 class="section-title">Keahlian</h2>
+
+        <div class="skills">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Bootstrap</div>
+            <div class="skill-box">CRUD Admin</div>
+            <div class="skill-box">Database Basic</div>
+        </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="project">
+        <h2 class="section-title">Project</h2>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/p1.jpg" alt="Website Admin CRUD" />
+                <h3>Website Admin CRUD</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/p2.jpg" alt="Front-End Basic" />
+                <h3>Front-End Basic</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/p3.jpg" alt="Mini Dashboard" />
+                <h3>Mini Dashboard</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak">
+        <h2 class="section-title">Kontak Saya</h2>
+
+        <form onsubmit="showMessage(); return false;">
+            <input type="text" placeholder="Nama" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Pesan" required></textarea>
+            <button>Kirim</button>
+        </form>
+    </section>
+
+    <!-- BACK TO TOP -->
+    <div id="backToTop">↑</div>
+
+    <script src="asset/js/script.js"></script>
+
+</body>
+</html>
