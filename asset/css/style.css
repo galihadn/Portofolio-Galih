@@ -118,6 +118,9 @@
     font-size: 48px;
     font-weight: 800;
   }
+  .hero-text h2 {
+  justify-content: center;
+  }
 
   .name {
     color: #007bff;
