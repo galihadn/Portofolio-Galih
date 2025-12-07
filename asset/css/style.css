@@ -37,8 +37,8 @@
     width: 100%;
     padding: 18px 5%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;   /* FIX */
+    align-items: center;              /* FIX */
     position: fixed;
     top: 0;
     background: rgba(255,255,255,0.85);
@@ -46,8 +46,7 @@
     z-index: 999;
     border-bottom: 1px solid #eaeaea;
     transition: 0.3s;
-  }
-
+}
   body.dark-mode nav {
     background: rgba(20,20,20,0.85);
     border-bottom-color: #333;
@@ -69,6 +68,7 @@
     list-style: none;
     display: flex;
     gap: 25px;
+    margin-left:auto;
   }
 
   nav ul li a {
