@@ -1,6 +1,11 @@
 /* =====================================
    GLOBAL
 ===================================== */
+/* Tombol hamburger default (desktop): disembunyikan */
+.menu-btn {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -412,6 +417,57 @@ form button:hover {
     padding: 10px 13px;
   }
 }
+
+/* =========================================
+   FIX NAVBAR MOBILE (≤ 768px)
+========================================= */
+/* =========================================
+   NAVBAR MOBILE FIX (≤ 768px)
+========================================= */
+@media (max-width: 768px) {
+
+  /* TOMBOL HAMBURGER MUNCUL */
+  .menu-btn {
+    display: block;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Sembunyikan menu dulu */
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: inherit;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Muncul saat ditekan */
+  nav ul.active {
+    display: flex;
+  }
+
+  /* Dark mode tetap di pojok kanan */
+  #darkModeBtn {
+    margin-left: 15px;
+  }
+}
+
+
 
 /* =====================================
    BACK TO TOP
