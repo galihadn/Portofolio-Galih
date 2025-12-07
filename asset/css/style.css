@@ -104,15 +104,34 @@
   /* =====================================
     HERO
   ===================================== */
-  .hero {
+ .hero {
     width: 100%;
     min-height: 95vh;
     padding: 70px 5% 50px;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;       /* gambar tidak terdorong ke kanan */
     align-items: center;
-    gap: 50px;
-  }
+    gap: 40px;
+
+    flex-wrap: wrap;               /* biar responsif */
+}
+
+.hero-text {
+    flex: 1 1 45%;                 /* lebar 45% kiri */
+    min-width: 280px;
+}
+
+.hero-img {
+    flex: 1 1 45%;                 /* lebar 45% kanan */
+    text-align: center;
+}
+
+.hero-img img {
+    width: 100%;                   /* tidak melebihi area */
+    max-width: 350px;              /* kontrol ukuran gambar */
+}
+
 
   .hero-text h1 {
     font-size: 48px;
