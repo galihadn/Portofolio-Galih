@@ -3,7 +3,9 @@
   ===================================== */
   /* Tombol hamburger default (desktop): disembunyikan */
   
-
+.menu-btn {
+  display: none;
+}
   * {
     margin: 0;
     padding: 0;
@@ -467,9 +469,7 @@
  /* ***********************
    RESET / DESKTOP DEFAULT
 *************************/
-.menu-btn {
-  display: none;
-}
+
 
 /* =========================
    MOBILE / TABLET NAVBAR
