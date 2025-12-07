@@ -37,7 +37,7 @@
     width: 100%;
     padding: 18px 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed;
     top: 0;
