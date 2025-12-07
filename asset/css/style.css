@@ -105,9 +105,9 @@
     HERO
   ===================================== */
   .hero {
-    width: 80%;
+    width: 90%;
     min-height: 95vh;
-    padding: 100px 5% 50px;
+    padding: 110px 5% 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
