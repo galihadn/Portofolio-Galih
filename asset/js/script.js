@@ -1,4 +1,3 @@
-
 /* ===== POPUP KONTAK ===== */
 function showMessage() {
   alert("Terima kasih! Pesan kamu sudah masuk.");
@@ -58,6 +57,14 @@ if (backToTop) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
+
+// HAMBURGER MENU
+const menuBtn = document.getElementById("menuBtn");
+const menuList = document.getElementById("menuList");
+
+menuBtn.addEventListener("click", () => {
+  menuList.classList.toggle("active");
+});
 
 /* ===== TYPING EFFECT ===== */
 const typingText = ["Web Admin", "Sistem Informasi", "Front-End Basic", "Data Management"];
