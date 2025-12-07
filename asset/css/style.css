@@ -508,3 +508,31 @@ body.dark-mode .contact-box textarea {
         margin: 0 auto;
     }
 }
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  width: 100%;
+  background: #007bff; /* Bisa diganti sesuai tema */
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 16px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Footer responsive */
+@media (max-width: 768px) {
+  footer {
+    font-size: 14px;
+    padding: 15px 5px;
+  }
+}
