@@ -116,23 +116,6 @@
 
     flex-wrap: wrap;               /* biar responsif */
 }
-
-.hero-text {
-    flex: 1 1 45%;                 /* lebar 45% kiri */
-    min-width: 280px;
-}
-
-.hero-img {
-    flex: 1 1 45%;                 /* lebar 45% kanan */
-    text-align: center;
-}
-
-.hero-img img {
-    width: 100%;                   /* tidak melebihi area */
-    max-width: 350px;              /* kontrol ukuran gambar */
-}
-
-
   .hero-text h1 {
     font-size: 48px;
     font-weight: 800;
