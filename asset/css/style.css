@@ -107,7 +107,7 @@
   .hero {
     width: 50%;
     min-height: 95vh;
-    padding: 120px 5% 50px;
+    padding: 100px 5% 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
